@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+<link href="../h3.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+@import url("../a3.css");
+</style>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head><a href="mailto:kkmm99@gmail.com">我的邮箱</a>
+
+<body>
+<img src="../Honey.png" width="500" height="375" alt="蜂蜜图" longdesc="http://127.0.0.1" />
+<p>2011年9月6日</p>
+<p> <a href="http://www.google.com.hk" title="g" target="_blank">google</a></p>
+<p>&nbsp;</p>
+<div class="h3">
+<h3>此处显示  class &quot;h3&quot; 的内容</h3>
+</div>
+</body>
+</html>
+<table width="200" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
