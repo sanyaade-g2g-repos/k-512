@@ -4,23 +4,23 @@
 = Introduction =
 
 == path chmod ==
-[k@localhost magento]$ sudo chmod o+w var var/.htaccess app/etc <br>
-[k@localhost magento]$ sudo chmod -R o+w media/<br>
+ sudo chmod o+w var var/.htaccess app/etc <br>
+ sudo chmod -R o+w media/<br>
 == mysql ==
-mysql> GRANT ALL PRIVILEGES ON magento_db.* TO "magento_user"@"localhost" IDENTIFIED BY "123456";
-Query OK, 0 rows affected (0.07 sec)
+mysql> GRANT ALL PRIVILEGES ON magento_db.* TO "magento_user"@"localhost" IDENTIFIED BY "123456"; <br>
+Query OK, 0 rows affected (0.07 sec)<br>
 
-mysql> CREATE DATABASE magento_db
-    -> ;
-Query OK, 1 row affected (0.01 sec)
+mysql> CREATE DATABASE magento_db;<br>
+   
+Query OK, 1 row affected (0.01 sec)<br>
 
-mysql> quit
-Bye
+mysql> quit<br>
+Bye<br>
 
 == mcrypt lib ==
 
- sudo rpm -ivh libmcrypt-2.5.8-9.el6.i686.rpm 
- sudo rpm -ivh php-mcrypt-5.3.2-3.el6.i686.rp
+ sudo rpm -ivh libmcrypt-2.5.8-9.el6.i686.rpm <br>
+ sudo rpm -ivh php-mcrypt-5.3.2-3.el6.i686.rp<br>
 
 ==  php-mysql ==
-sudo rpm -ivh /media/iso/Packages/php-mysql-5.3.3-3.el6.i686.rpm
+sudo rpm -ivh /media/iso/Packages/php-mysql-5.3.3-3.el6.i686.rpm<br>
