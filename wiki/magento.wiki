@@ -18,7 +18,9 @@ mysql> quit
 Bye
 
 == mcrypt lib ==
+
  sudo rpm -ivh libmcrypt-2.5.8-9.el6.i686.rpm 
+ sudo rpm -ivh php-mcrypt-5.3.2-3.el6.i686.rp
+
 ==  php-mysql ==
 sudo rpm -ivh /media/iso/Packages/php-mysql-5.3.3-3.el6.i686.rpm
-
