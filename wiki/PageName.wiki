@@ -6,7 +6,7 @@
 
  
 
-=== About OpenCart Themes ===
+=== About opencart Themes ===
 
    *  OpenCart uses MVC architecture. This means that the "V" or "view" is kept separate from the main code.  
    * The "view" is made up of the *.tpl files and are always found in: catalog/view/theme/YOUR_THEME/*.*  
@@ -81,7 +81,7 @@ This is the controller file for the admin section. For those of you who are not 
 
 So what must you do to create this controller file? First you need to start the class:
 
- 
+ {{{
 
 <?php class ControllerModuleName extends Controller {
 
@@ -94,14 +94,14 @@ So what must you do to create this controller file? First you need to start the 
 
 } ?>
 
- 
+ }}}
 
 That is the basis of your Controller. Now you have the use of the built in error control and the start of your modules controller. Of course this will not work without it having us enter the rest of the code. Not to mention, what language file should be used, how is this module going to be displayed...still a few more steps!
 
 So let's get back to the basics of your admin controller.
 
  
-
+{{{
 <?php class ControllerModuleName extends Controller {
 
     private $error = array();
@@ -114,13 +114,13 @@ So let's get back to the basics of your admin controller.
 
 } ?>
 
- 
+ }}}
 
 Now what we have done here is said that there is a language file located in admin/language/module/modulename.php. Notice that with the PHP Framework you do not need to include the .php. Next we are grabbing the 'heading_title' from the language file so that it stores the title in document->title(which will be used in the view of your module).
 
 Moving on...if you want to utilize any of the built in OpenCart features make sure to include the following in your code (which is admin/controller/setting/setting.php):
 
- 
+ {{{
 
 <?php class ControllerModuleName extends Controller {
 
@@ -134,3 +134,4 @@ Moving on...if you want to utilize any of the built in OpenCart features make su
     }
 
 } ?>
+}}}
