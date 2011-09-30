@@ -1,0 +1,92 @@
+#summary One-sentence summary of this page.
+#labels k512
+
+= OpenCart笔记1 =
+
+
+
+
+== requirement: ==
+
+Apache, PHP 5, Mysql
+
+Open source shopping carts Opencart vs Prestashop vs Magento:
+http://www.iecsp.com/opencart-vs-prestashop-vs-magento-589
+
+Installation:
+http://www.opencart.com/index.php?route=documentation/documentation&path=4
+
+
+== Opencart folder structure ==
+OpenCart 1.x uses an MVC(+L) style framework:
+Model - Database layer
+View - Template display
+Controller - Main controlling code base
+Language - Localization
+
+So for each product page on the frontend, there are up to 4 main files:
+M: /catalog/model/catalog/product.php
+V: /catalog/view/template/product/product.tpl
+C: /catalog/controller/product/product.php
+L: /catalog/language/english/product/product.php
+
+Similarly, on the admin side, to set those fields, there are up to 4 main files as well:
+M: /admin/model/catalog/product.php
+V: /admin/view/template/catalog/product.tpl
+C: /admin/controller/catalog/product.php
+L: /admin/language/english/catalog/product.php
+
+
+== Moving your store ==
+
+ Moving to another folder
+
+When you want to move your store to a (sub)-folder of your domain you need to do the following:
+
+A: Backing up files and database.
+   1. Backup your store files via FTP to your Pc.
+   2. Backup your database using phpMyAdmin to your Pc (just in case).
+
+B: Restoring files.
+   1. Delete your store files on your domain (do NOT touch your database!).
+   2. Create the new sub-folder.
+   3. Restore all the backup files made at A:1 via FTP to yourdomain/sub-folder.
+   4. Adjust the yourdomain/sub-folder/config.php and yourdomain/sub-folder/admin/config.php to reflect the new store folder structure.
+   5. Verify the correct rights on your store folders and files.
+   6. Test the new store setup.
+
+
+== Moving to another hoster/domain ==
+
+When you want to move your store to a new hoster or domain you need to do the following:
+
+A: On your old domain/hoster:
+   1. Backup your store files via FTP to your Pc.
+   2. Backup your database using phpMyAdmin to your Pc.
+
+B: On your new hoster/domain:
+   1. Do a clean install of the same version of your version of Opencart.
+   2. Delete all the files of this clean install EXCEPT the yourdomain/config.php and yourdomain/admin/config.php
+   3. Use phpMyAdmin to empty (not delete) the new created database.
+   4. Restore all the backup files made at A:1 EXCEPT the /config.php and /admin/config.php.
+   5. Restore the backup of your database made at A: 2 using phpMyAdmin.
+   6. Verify the correct rights on your store folders and files.
+   7. Test the new store setup.
+
+Using phpMyAdmin
+1) Backing up your database
+   1. First, navigate to your phpMyAdmin page via cPanel or whatever alternative administration system your host provides i.e. Plesk etc. and log in.
+   2. From the dropdown box on the left (or the text link) click on your OpenCart database to show all the fields.
+   3. In the main page, click on the 'Export' tab.
+   4. Make sure the main 'Structure' 'select all' and 'Data' boxes are ticked.
+   5. In the right box, make sure 'Add drop table', 'Add AUTO_INCREMENT value' and 'Enclose table and field names with backquotes' are ticked.
+   6. select the SQL format in the 'export' column'.
+   7. Tick 'Save as file'.
+   8. If you want the backup file compressed, tick either 'zipped' or 'gzipped'.
+   9. Click 'Go' to save your file - the preferred location would be your own PC - saving a backup on a host server could be problematic should the server hard drive fail. It's always better to have your own backup locally!
+
+2) restoring a backup
+On the phpMyAdmin main page - Click on the 'SQL' tab at the top and browse to the location of your backup file. Then select 'Go' from the tab at the bottom right corner of the screen - you may need to empty your existing database before you can restore the backup however normally you don't as the backup will simply overwrite the existing database.
+
+3) Emptying your database
+On the PhpMyAdmin main page - Click on the 'Structure' tab at the top and browse to the botom of the page. Then select 'Check All' and from the drop-down choose 'Empty'. Select 'Yes' to empty the database.
