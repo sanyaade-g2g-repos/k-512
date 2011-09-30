@@ -1,6 +1,6 @@
 #summary One-sentence summary of this page.
 
-= OpenCart笔记2 (Theme and Module Development) =
+= opencart 笔记2 (Theme and Module Development) =
 
 == Themes ==
 
@@ -32,9 +32,9 @@ There are some golden rules to follow when creating your own theme.
 
     * Create a new theme folder in the catalog/view/theme path. For this example, I will use the name "silverfish"  
     * Copy the following files from the "default" theme, into the "silverfish" folder. Be sure to keep the same directory structure:
-    - catalog/view/theme/default /stylesheet/*.*
-    - catalog/view/theme/default /image/*.*
-    - catalog/view/theme/default /template/common/header.tpl  
+    - catalog/view/theme/default /stylesheet/*.* <br>
+    - catalog/view/theme/default /image/*.* <br>
+    - catalog/view/theme/default /template/common/header.tpl  <br>
    *  Edit the catalog/view/theme/silverfish /template/common/header.tpl  
    * Find and replace all references to "default" with "silverfish" in that file. Save & Close.  
    * From the OpenCart Admin area, Goto the main Settings section and change the theme from default to silverfish  
