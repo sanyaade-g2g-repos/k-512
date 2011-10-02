@@ -4,4 +4,4 @@
 = opencart note =
 
 == 目录 ==
- * image/     图片目录
+ || image/  ||   图片目录
