@@ -1,0 +1,6 @@
+#summary One-sentence summary of this page.
+#labels git
+
+= Git 知识 =
+
+[http://www.nvie.com/posts/a-successful-git-branching-model git 分支管理模型]
